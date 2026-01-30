@@ -83,7 +83,9 @@ linux 공부/
 
 **URL**: https://github.com/rometemp0613/linux-study
 
-### 학습 내용 업로드 방법
+### 학습 후 반드시 실행할 것
+
+학습 내용을 추가하거나 수정한 후에는 아래 명령어를 실행해서 GitHub에 업로드해야 합니다.
 
 ```bash
 cd "/Volumes/Extreme SSD/linux 공부"
