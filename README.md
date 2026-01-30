@@ -76,3 +76,30 @@ linux 공부/
 │   └── part4-writing-shell-scripts/
 └── logs/                  # 날짜별 학습 일지
 ```
+
+---
+
+## GitHub 저장소
+
+**URL**: https://github.com/rometemp0613/linux-study
+
+### 학습 내용 업로드 방법
+
+```bash
+cd "/Volumes/Extreme SSD/linux 공부"
+git add -A
+git commit -m "docs: 학습 내용 추가"
+git push
+```
+
+### 다른 컴퓨터에서 받아오기
+
+```bash
+git clone https://github.com/rometemp0613/linux-study.git
+```
+
+### 최신 내용 동기화
+
+```bash
+git pull
+```
