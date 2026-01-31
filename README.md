@@ -12,8 +12,8 @@
 - [x] Chapter 1: What Is the Shell?
 - [x] Chapter 2: Navigation
 - [x] Chapter 3: Exploring the System
-- [ ] Chapter 4: Manipulating Files and Directories
-- [ ] Chapter 5: Working with Commands
+- [x] Chapter 4: Manipulating Files and Directories
+- [x] Chapter 5: Working with Commands
 - [ ] Chapter 6: Redirection
 - [ ] Chapter 7: Seeing the World as the Shell Sees It
 - [ ] Chapter 8: Advanced Keyboard Tricks
@@ -61,6 +61,8 @@
 | 2026-01-28 | Ch.1 | 셸 개념, 기본 명령어 (date, cal, df), 단축키 | 완료 |
 | 2026-01-30 | Ch.2 | 파일 시스템 트리, pwd, ls, cd, 경로 개념 | 완료 |
 | 2026-01-30 | Ch.3 | ls 옵션, file, less, 심볼릭 링크, 디렉토리 구조 | 완료 |
+| 2026-01-31 | Ch.4 | mkdir, cp, mv, rm, ln, 와일드카드, 하드/심볼릭 링크 | 완료 |
+| 2026-01-31 | Ch.5 | type, which, help, man, apropos, alias | 완료 |
 
 ---
 
