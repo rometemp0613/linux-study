@@ -130,7 +130,7 @@
 ## 디렉토리 구조
 
 ```
-linux 공부/
+study/linux/
 ├── README.md              # 진도 체크리스트 (현재 파일)
 ├── CLAUDE.md              # Claude 학습 지침서
 ├── notes/                 # 챕터별 학습 노트
@@ -150,7 +150,7 @@ linux 공부/
 ### 학습 후 반드시 실행할 것
 
 ```bash
-cd "/Volumes/Extreme SSD/linux 공부"
+cd "/Volumes/Extreme SSD/study/linux"
 git add -A
 git commit -m "docs: 학습 내용 추가"
 git push
