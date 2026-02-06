@@ -22,7 +22,7 @@
   - 핵심: 좋은 파일명 vs 나쁜 파일명, 공백/특수문자 처리
 - [x] **Ch.5: Working with Commands**
   - 핵심: type, which, help, man, apropos, alias
-- [ ] **Ch.6: Redirection**
+- [x] **Ch.6: Redirection**
   - 핵심: >, >>, <, 2>, 2>&1, |, 표준 입출력/에러
 - [ ] **Ch.7: Seeing the World as the Shell Sees It**
   - 핵심: 확장 (경로명, 틸드, 중괄호, 산술, 명령어 치환), 따옴표
@@ -116,14 +116,15 @@
 | 2026-01-31 | Ch.4 | mkdir, cp, mv, rm, ln, 와일드카드, 하드/심볼릭 링크 | 완료 |
 | 2026-01-31 | Ch.5 | type, which, help, man, apropos, alias | 완료 |
 | 2026-01-31 | - | 커리큘럼 보충 (강의 내용 합집합) | 완료 |
+| 2026-02-07 | Ch.6 | 리다이렉션(>, >>, 2>, &>), 파이프(\|), tee, /dev/null | 완료 |
 
 ---
 
 ## 진행 현황
 
 - **총 챕터**: 41개
-- **완료**: 5개
-- **진행률**: 12%
+- **완료**: 6개
+- **진행률**: 15%
 
 ---
 
