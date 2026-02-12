@@ -30,7 +30,7 @@
   - 핵심: 커서 이동, 히스토리, 자동완성, 킬링/yanking
 - [x] **Ch.9: Permissions**
   - 핵심: 읽기/쓰기/실행 권한, chmod, chown, sudo, su
-- [ ] **Ch.10: Processes**
+- [x] **Ch.10: Processes**
   - 핵심: ps, top, jobs, bg, fg, kill, &
 
 ### Part 2: Configuration and the Environment
@@ -121,14 +121,15 @@
 | 2026-02-12 | Ch.7 | 확장 7종류, $()와 $(()) 차이, 따옴표(큰/작은/이스케이프) | 완료 |
 | 2026-02-12 | Ch.8 | 커서 이동, Kill/Yank, Tab 자동완성, 히스토리(Ctrl-R, !!) | 완료 |
 | 2026-02-13 | Ch.9 | 권한(rwx), chmod(숫자/기호), sudo/su, chown | 완료 |
+| 2026-02-13 | Ch.10 | 프로세스, ps aux, top, &/bg/fg, kill/kill -9 | Part 1 완료! |
 
 ---
 
 ## 진행 현황
 
 - **총 챕터**: 41개
-- **완료**: 10개
-- **진행률**: 24%
+- **완료**: 11개
+- **진행률**: 27%
 
 ---
 
