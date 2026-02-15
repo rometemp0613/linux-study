@@ -35,7 +35,7 @@
 
 ### Part 2: Configuration and the Environment
 
-- [ ] **Ch.11: The Environment**
+- [x] **Ch.11: The Environment**
   - 핵심: 환경변수, PATH, export, 스타트업 파일
 - [ ] **Ch.12: Nano 에디터** *(강의 추가)*
   - 핵심: nano 기본 사용법, 단축키, 찾기/바꾸기
@@ -122,14 +122,15 @@
 | 2026-02-12 | Ch.8 | 커서 이동, Kill/Yank, Tab 자동완성, 히스토리(Ctrl-R, !!) | 완료 |
 | 2026-02-13 | Ch.9 | 권한(rwx), chmod(숫자/기호), sudo/su, chown | 완료 |
 | 2026-02-13 | Ch.10 | 프로세스, ps aux, top, &/bg/fg, kill/kill -9 | Part 1 완료! |
+| 2026-02-16 | Ch.11 | 환경변수, PATH, export, .bashrc/.bash_profile, source | Part 2 시작! |
 
 ---
 
 ## 진행 현황
 
 - **총 챕터**: 41개
-- **완료**: 11개
-- **진행률**: 27%
+- **완료**: 12개
+- **진행률**: 29%
 
 ---
 

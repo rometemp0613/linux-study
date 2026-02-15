@@ -20,3 +20,13 @@
 - **fg/bg는 jobs 번호(%), kill은 PID**: `fg %1` vs `kill 12345`
 - **kill vs kill -9**: kill = 종료 요청(정리 시간), kill -9 = 강제 즉시 종료(최후의 수단)
 - **killall**: 프로세스 이름으로 종료. `killall firefox`
+
+## Ch.11 The Environment
+
+- **셸 변수 vs 환경변수**: 셸 변수 = 현재 셸에서만. 환경변수 = `export`하면 자식 프로세스에도 전달
+- **printenv**: 환경변수 목록 확인. `printenv PATH`로 특정 변수 확인 가능
+- **PATH**: 명령어 검색 경로. `:`으로 구분, 왼쪽부터 탐색. 추가: `export PATH="$PATH:/새경로"`
+- **변수 할당 규칙**: `=` 앞뒤 공백 금지! `VAR="값"` ✅ / `VAR = "값"` ❌
+- **.bashrc vs .bash_profile**: `.bashrc` = 비로그인 셸(매번), `.bash_profile` = 로그인 셸(SSH 등)
+- **source**: 설정 파일 다시 불러오기. `source ~/.bashrc` = `. ~/.bashrc`
+- **unset**: 변수 삭제. `unset VAR`
