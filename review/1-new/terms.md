@@ -30,3 +30,12 @@
 - **.bashrc vs .bash_profile**: `.bashrc` = 비로그인 셸(매번), `.bash_profile` = 로그인 셸(SSH 등)
 - **source**: 설정 파일 다시 불러오기. `source ~/.bashrc` = `. ~/.bashrc`
 - **unset**: 변수 삭제. `unset VAR`
+
+## Ch.12 Nano 에디터
+
+- **nano 기본**: `nano filename`으로 열기. `^` = Ctrl 키
+- **저장하고 나가기**: `Ctrl+X` → `Y` → `Enter`
+- **Ctrl+K / Ctrl+U**: 줄 잘라내기(Kill) / 붙여넣기(Uncut). bash의 Kill/Yank과 비슷하지만 붙여넣기 키 다름!
+- **Ctrl+W**: 찾기 (Where is)
+- **Ctrl+\\**: 찾아 바꾸기 (Y=하나씩, A=전부)
+- **Ctrl+_**: 특정 줄 번호로 이동
