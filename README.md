@@ -49,7 +49,7 @@
   - 핵심: 환경변수, PATH, export, 스타트업 파일
 - [x] **Ch.12: Nano 에디터** *(강의 추가)*
   - 핵심: nano 기본 사용법, 단축키, 찾기/바꾸기
-- [ ] **Ch.13: A Gentle Introduction to vi**
+- [x] **Ch.13: A Gentle Introduction to vi**
   - 핵심: vi/vim 모드, 기본 편집, 저장/종료
 - [ ] **Ch.14: Customizing the Prompt**
   - 핵심: PS1, 이스케이프 코드, 프롬프트 커스터마이징
@@ -134,14 +134,15 @@
 | 2026-02-13 | Ch.10 | 프로세스, ps aux, top, &/bg/fg, kill/kill -9 | Part 1 완료! |
 | 2026-02-16 | Ch.11 | 환경변수, PATH, export, .bashrc/.bash_profile, source | Part 2 시작! |
 | 2026-02-16 | Ch.12 | nano 단축키, 저장/종료, 찾기/바꾸기 | 완료 |
+| 2026-02-17 | Ch.13 | vi/vim 모드, hjkl 이동, 편집, 찾기/바꾸기 | 완료 |
 
 ---
 
 ## 진행 현황
 
 - **총 챕터**: 41개
-- **완료**: 13개
-- **진행률**: 32%
+- **완료**: 14개
+- **진행률**: 34%
 
 ---
 
