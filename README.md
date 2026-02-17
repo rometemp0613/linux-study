@@ -51,7 +51,7 @@
   - 핵심: nano 기본 사용법, 단축키, 찾기/바꾸기
 - [x] **Ch.13: A Gentle Introduction to vi**
   - 핵심: vi/vim 모드, 기본 편집, 저장/종료
-- [ ] **Ch.14: Customizing the Prompt**
+- [x] **Ch.14: Customizing the Prompt**
   - 핵심: PS1, 이스케이프 코드, 프롬프트 커스터마이징
 
 ### Part 3: Common Tasks and Essential Tools
@@ -135,14 +135,15 @@
 | 2026-02-16 | Ch.11 | 환경변수, PATH, export, .bashrc/.bash_profile, source | Part 2 시작! |
 | 2026-02-16 | Ch.12 | nano 단축키, 저장/종료, 찾기/바꾸기 | 완료 |
 | 2026-02-17 | Ch.13 | vi/vim 모드, hjkl 이동, 편집, 찾기/바꾸기 | 완료 |
+| 2026-02-18 | Ch.14 | PS1 프롬프트, 이스케이프 코드, 색상 코드 | Part 2 완료! |
 
 ---
 
 ## 진행 현황
 
 - **총 챕터**: 41개
-- **완료**: 14개
-- **진행률**: 34%
+- **완료**: 15개
+- **진행률**: 37%
 
 ---
 
