@@ -56,7 +56,7 @@
 
 ### Part 3: Common Tasks and Essential Tools
 
-- [ ] **Ch.15: Reading Files** *(강의 추가)*
+- [x] **Ch.15: Reading Files** *(강의 추가)*
   - 핵심: cat, less, head, tail, tac, rev, wc, sort
 - [ ] **Ch.16: Piping과 tr 명령어** *(강의 추가)*
   - 핵심: 파이프 활용, tr, tee, 여러 파이프 조합
@@ -136,14 +136,15 @@
 | 2026-02-16 | Ch.12 | nano 단축키, 저장/종료, 찾기/바꾸기 | 완료 |
 | 2026-02-17 | Ch.13 | vi/vim 모드, hjkl 이동, 편집, 찾기/바꾸기 | 완료 |
 | 2026-02-18 | Ch.14 | PS1 프롬프트, 이스케이프 코드, 색상 코드 | Part 2 완료! |
+| 2026-02-22 | Ch.15 | cat, tac, rev, head, tail -f, wc, sort | Part 3 시작! |
 
 ---
 
 ## 진행 현황
 
 - **총 챕터**: 41개
-- **완료**: 15개
-- **진행률**: 37%
+- **완료**: 16개
+- **진행률**: 39%
 
 ---
 
