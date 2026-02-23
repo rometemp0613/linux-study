@@ -58,7 +58,7 @@
 
 - [x] **Ch.15: Reading Files** *(강의 추가)*
   - 핵심: cat, less, head, tail, tac, rev, wc, sort
-- [ ] **Ch.16: Piping과 tr 명령어** *(강의 추가)*
+- [x] **Ch.16: Piping과 tr 명령어** *(강의 추가)*
   - 핵심: 파이프 활용, tr, tee, 여러 파이프 조합
 - [ ] **Ch.17: Package Management**
   - 핵심: apt, yum/dnf, 패키지 설치/삭제/업데이트
@@ -137,6 +137,7 @@
 | 2026-02-17 | Ch.13 | vi/vim 모드, hjkl 이동, 편집, 찾기/바꾸기 | 완료 |
 | 2026-02-18 | Ch.14 | PS1 프롬프트, 이스케이프 코드, 색상 코드 | Part 2 완료! |
 | 2026-02-22 | Ch.15 | cat, tac, rev, head, tail -f, wc, sort | Part 3 시작! |
+| 2026-02-23 | Ch.16 | tr, tee, uniq, 파이프 조합 실전 | |
 
 ---
 
