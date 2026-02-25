@@ -87,3 +87,14 @@
 - **uniq -d**: duplicated. 2번 이상 나온 줄만 출력
 - **uniq -u**: unique. 정확히 1번만 나온 줄만 출력
 - **sort | uniq -c | sort -rn**: 빈도 분석 필수 패턴. sort -u로는 횟수를 셀 수 없음
+
+## Ch.17 Package Management
+
+- **패키지(Package)**: 프로그램을 설치 가능하게 묶은 파일. 실행파일 + 설정파일 + 의존성 정보 포함
+- **의존성(Dependency)**: 프로그램 A가 동작하려면 라이브러리 B가 필요한 관계. 패키지 매니저가 자동 해결
+- **저장소(Repository)**: 패키지들이 모여있는 온라인 서버. 앱스토어 같은 것
+- **데비안 계열 vs 레드햇 계열**: 데비안(.deb, apt) = Ubuntu/Debian, 레드햇(.rpm, yum/dnf) = CentOS/RHEL/Fedora
+- **apt update vs apt upgrade**: update = 저장소 목록 갱신(설치X), upgrade = 실제 패키지 업그레이드. 세트로 씀
+- **apt remove vs apt purge**: remove = 설정파일 남김(재설치 시 복원), purge = 설정파일까지 완전 삭제
+- **sudo 필요 여부**: 시스템 변경(install/remove/update/upgrade) = sudo 필요, 조회(search/show/list) = 불필요
+- **dnf**: yum의 후속 버전. RHEL 8+, Fedora에서 사용. 명령어 사용법 동일
