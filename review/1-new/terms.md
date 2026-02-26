@@ -110,3 +110,6 @@
 - **/etc/fstab**: 부팅 시 자동 마운트 설정 파일. 장치/마운트위치/파일시스템/옵션/dump/pass 6개 필드
 - **UUID 사용 이유**: 장치명(`sda`, `sdb`)은 꽂는 순서에 따라 바뀔 수 있음. UUID는 고유 ID라 안전. `blkid`로 확인
 - **Microsoft Basic Data**: diskutil에서 보이는 타입. exFAT 또는 NTFS로 포맷된 윈도우 호환 파티션
+- **nodev/nosuid/noowners/noatime**: nodev=디바이스파일 차단, nosuid=setuid 무시, noowners=소유자 무시(ExFAT 등), noatime=접근시간 기록 안 함(SSD 수명+성능)
+- **setuid 비트**: `chmod 4755`의 4. 실행 시 파일 소유자 권한으로 실행됨. `ls -l`에서 `s`로 표시. 예: passwd 명령어
+- **sealed (macOS)**: OS 볼륨 봉인. 시스템 파일 변조 방지, read-only로 마운트됨
