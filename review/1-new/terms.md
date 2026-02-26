@@ -98,3 +98,15 @@
 - **apt remove vs apt purge**: remove = 설정파일 남김(재설치 시 복원), purge = 설정파일까지 완전 삭제
 - **sudo 필요 여부**: 시스템 변경(install/remove/update/upgrade) = sudo 필요, 조회(search/show/list) = 불필요
 - **dnf**: yum의 후속 버전. RHEL 8+, Fedora에서 사용. 명령어 사용법 동일
+
+## Ch.18 Storage Media
+
+- **마운트(mount)**: 저장장치를 파일 트리의 특정 디렉토리에 연결하는 것. `sudo mount /dev/sdb1 /mnt/usb`
+- **umount**: 마운트 해제. `unmount`가 아니라 **`umount`** (n 없음!). `sudo umount /mnt/usb`
+- **장치 이름 규칙**: `sda`=첫 번째 디스크, `sda1`=첫 번째 파티션, `sdb1`=두 번째 디스크의 첫 번째 파티션
+- **lsblk**: 블록 장치 트리 구조로 보기. macOS 동등 명령어: `diskutil list`
+- **fdisk -l**: 모든 디스크/파티션 목록 확인. `sudo fdisk -l /dev/sda`로 특정 디스크만
+- **mkfs**: make filesystem (포맷). `mkfs.ext4`, `mkfs.vfat`, `mkfs.ntfs` — 포맷하면 데이터 삭제!
+- **/etc/fstab**: 부팅 시 자동 마운트 설정 파일. 장치/마운트위치/파일시스템/옵션/dump/pass 6개 필드
+- **UUID 사용 이유**: 장치명(`sda`, `sdb`)은 꽂는 순서에 따라 바뀔 수 있음. UUID는 고유 ID라 안전. `blkid`로 확인
+- **Microsoft Basic Data**: diskutil에서 보이는 타입. exFAT 또는 NTFS로 포맷된 윈도우 호환 파티션
