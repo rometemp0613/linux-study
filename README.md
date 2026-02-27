@@ -64,7 +64,7 @@
   - 핵심: apt, yum/dnf, 패키지 설치/삭제/업데이트
 - [x] **Ch.18: Storage Media**
   - 핵심: mount, umount, fdisk, 파일시스템
-- [ ] **Ch.19: Networking**
+- [x] **Ch.19: Networking**
   - 핵심: ping, traceroute, netstat, ssh, scp, wget, curl
 - [ ] **Ch.20: Searching for Files**
   - 핵심: find, locate, xargs, 타임스탬프 기반 검색
@@ -140,14 +140,15 @@
 | 2026-02-23 | Ch.16 | tr, tee, uniq, 파이프 조합 실전 | 재학습 완료 |
 | 2026-02-25 | Ch.17 | 패키지 매니저, apt/yum/dnf, update vs upgrade | 완료 |
 | 2026-02-26 | Ch.18 | mount, umount, fdisk, 파일시스템, /etc/fstab, UUID | 완료 |
+| 2026-02-27 | Ch.19 | ping, traceroute, ssh, scp, wget, curl, 포트포워딩 | 완료 |
 
 ---
 
 ## 진행 현황
 
 - **총 챕터**: 41개
-- **완료**: 18개
-- **진행률**: 44%
+- **완료**: 19개
+- **진행률**: 46%
 
 ---
 

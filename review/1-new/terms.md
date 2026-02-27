@@ -113,3 +113,17 @@
 - **nodev/nosuid/noowners/noatime**: nodev=디바이스파일 차단, nosuid=setuid 무시, noowners=소유자 무시(ExFAT 등), noatime=접근시간 기록 안 함(SSD 수명+성능)
 - **setuid 비트**: `chmod 4755`의 4. 실행 시 파일 소유자 권한으로 실행됨. `ls -l`에서 `s`로 표시. 예: passwd 명령어
 - **sealed (macOS)**: OS 볼륨 봉인. 시스템 파일 변조 방지, read-only로 마운트됨
+
+## Ch.19 Networking
+
+- **ping**: 서버 연결 확인. `-c N` 횟수, `-i N` 간격, `-s N` 패킷 크기 지정. ping 안 됨 ≠ 서버 죽음 (방화벽 차단 가능)
+- **traceroute**: 목적지까지 경로 추적. 각 hop = 거쳐가는 라우터. `-m N` 최대 hop, `-q N` hop당 패킷 수 (기본 3, 빠르게는 1)
+- **ifconfig vs ip**: macOS는 `ifconfig`, 리눅스는 `ip a`. `ifconfig | grep "inet "`으로 IP 추출
+- **netstat vs ss**: macOS는 `netstat`, 리눅스는 `ss`. macOS: `netstat -an | grep LISTEN`
+- **ssh**: 원격 접속. `-p`(소문자) 포트, `-i` 키파일, `-v` 디버그, `-L` 포트포워딩
+- **ssh -L (포트포워딩)**: `ssh -L 로컬포트:localhost:서버포트 user@server`. 외부 차단된 서비스를 SSH 터널로 우회 접속. 터널 열고 해당 서비스 클라이언트로 접속
+- **포트**: 건물의 문 번호. IP = 주소, 포트 = 문. 서비스마다 고유 포트 사용 (22=SSH, 80=HTTP, 443=HTTPS, 3306=MySQL)
+- **scp**: SSH 기반 파일 복사. `scp 출발지 목적지` — 목적지 생략 불가! `-r` 디렉토리, `-P`(**대문자**) 포트. ssh는 -p(소문자)
+- **wget**: 파일 다운로드 전문. `-O` 파일명, `-c` 이어받기(끊겨도 재개), 기본 파일로 저장
+- **curl**: 만능 네트워크 도구. `-I` 헤더만, `-s` 조용히, `-L` 리다이렉트 따라가기, `-X` 메서드, `-d` 데이터, `-H` 커스텀 헤더. 기본 화면 출력
+- **wget vs curl**: 다운로드만 → wget(-c 이어받기 편함), API 테스트/디버깅 → curl(POST, 헤더 등)
