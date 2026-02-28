@@ -12,5 +12,5 @@
 
 ## Ch.19 Networking (2026-02-27) — 퀴즈에서 틀린 것
 
-- **scp 목적지 필수**: `scp user@server:/path/file` ← 이러면 에러! 반드시 목적지 명시: `scp user@server:/path/file ./`
+- ~~**scp 목적지 필수**~~ ✅ 2026-02-28 mastered로 승급
 - **scp -r 디렉토리**: 디렉토리 전체 복사 시 `-r` 필수. cp -r과 같은 이유
