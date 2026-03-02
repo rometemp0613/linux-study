@@ -68,7 +68,7 @@
   - 핵심: ping, traceroute, netstat, ssh, scp, wget, curl
 - [x] **Ch.20: Searching for Files**
   - 핵심: find, locate, xargs, 타임스탬프 기반 검색
-- [ ] **Ch.21: Archiving and Backup**
+- [x] **Ch.21: Archiving and Backup**
   - 핵심: tar, gzip, bzip2, zip, rsync
 - [ ] **Ch.22: Regular Expressions**
   - 핵심: 기본 정규식, 메타문자, 문자 클래스
@@ -142,14 +142,15 @@
 | 2026-02-26 | Ch.18 | mount, umount, fdisk, 파일시스템, /etc/fstab, UUID | 완료 |
 | 2026-02-27 | Ch.19 | ping, traceroute, ssh, scp, wget, curl, 포트포워딩 | 완료 |
 | 2026-02-28 | Ch.20 | locate, find(이름/타입/크기/시간), -exec, xargs | 완료 |
+| 2026-03-02 | Ch.21 | tar(czf/xzf/tzf), gzip(-k), zip(-r), rsync(-av/--delete/--dry-run) | 완료 |
 
 ---
 
 ## 진행 현황
 
 - **총 챕터**: 41개
-- **완료**: 20개
-- **진행률**: 49%
+- **완료**: 21개
+- **진행률**: 51%
 
 ---
 

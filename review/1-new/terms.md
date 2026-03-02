@@ -82,7 +82,7 @@
 - **tr 문자 클래스**: `[:lower:]`, `[:upper:]`, `[:digit:]`, `[:space:]`, `[:punct:]` — 범위 대신 표준 클래스 사용 가능
 - **tee**: T자 파이프. stdout과 파일에 동시 출력. 배관의 T자 연결부 비유
 - **tee -a**: append 모드. 기존 파일 내용 유지하면서 추가 (`>>` 같은 효과)
-- **uniq**: 중복 줄 제거. **인접한** 중복만 제거하므로 반드시 `sort` 선행 필수
+- ~~**uniq**~~ ✅ 2026-03-02 practicing으로 승급
 - **uniq -c**: count. 각 줄의 등장 횟수 표시
 - **uniq -d**: duplicated. 2번 이상 나온 줄만 출력
 - **uniq -u**: unique. 정확히 1번만 나온 줄만 출력
@@ -126,7 +126,7 @@
 - **scp**: SSH 기반 파일 복사. `scp 출발지 목적지` — 목적지 생략 불가! `-r` 디렉토리, `-P`(**대문자**) 포트. ssh는 -p(소문자)
 - **wget**: 파일 다운로드 전문. `-O` 파일명, `-c` 이어받기(끊겨도 재개), 기본 파일로 저장
 - **curl**: 만능 네트워크 도구. `-I` 헤더만, `-s` 조용히, `-L` 리다이렉트 따라가기, `-X` 메서드, `-d` 데이터, `-H` 커스텀 헤더. 기본 화면 출력
-- **wget vs curl**: 다운로드만 → wget(-c 이어받기 편함), API 테스트/디버깅 → curl(POST, 헤더 등)
+- ~~**wget vs curl**~~ ✅ 2026-03-02 practicing으로 승급
 
 ## Ch.20 Searching for Files
 
@@ -142,3 +142,17 @@
 - **find 조건 조합**: AND=기본, OR=`-o`, NOT=`!` 또는 `-not`
 - **-print0 | xargs -0**: 공백 있는 파일명 안전 처리. 반드시 짝으로 사용
 - **| wc -l vs xargs wc -l**: `| wc -l` = find 결과 개수, `xargs wc -l` = 파일 내용의 줄 수
+
+## Ch.21 Archiving and Backup
+
+- **묶기 vs 압축**: tar = 묶기(용량 안 줄어듦), gzip/bzip2/xz = 압축(용량 줄어듦). 리눅스는 두 단계 분리
+- **tar czf/xzf/tzf**: c=생성, x=풀기, t=목록. z=gzip, j=bzip2, J=xz. f=파일명 지정
+- **tar -C**: Change directory. 풀 위치 지정. `tar xzf file.tar.gz -C /tmp/`
+- **gzip 원본 삭제**: `gzip file` 하면 원본 사라짐! `-k`(keep)로 원본 유지
+- **압축 3종 비교**: 속도 gzip>bzip2>xz, 압축률 xz>bzip2>gzip. 실무 90%는 gzip
+- **zip -r 필수**: 폴더 압축 시 `-r` 없으면 빈 폴더만 들어감. `unzip -l`로 목록 확인
+- **tar.gz vs zip**: 리눅스끼리=tar.gz(권한 보존), 윈도우 호환=zip
+- **rsync -av**: 변경된 파일만 복사. a=archive(권한 보존), v=verbose
+- **rsync 슬래시 규칙**: `source/` = 내용물 복사, `source` = 폴더 자체를 dest 안에 복사
+- **rsync --delete**: 원본에 없는 파일을 대상에서도 삭제. 반드시 `--dry-run`(-n) 먼저!
+- **--dry-run**: 실제 실행 안 하고 뭘 할지만 보여줌. --delete 전 필수 습관
