@@ -70,7 +70,7 @@
   - 핵심: find, locate, xargs, 타임스탬프 기반 검색
 - [x] **Ch.21: Archiving and Backup**
   - 핵심: tar, gzip, bzip2, zip, rsync
-- [ ] **Ch.22: Regular Expressions**
+- [x] **Ch.22: Regular Expressions**
   - 핵심: 기본 정규식, 메타문자, 문자 클래스
 - [ ] **Ch.23: grep 완전 정복** *(강의 추가)*
   - 핵심: grep 옵션들, 정규식과 함께 사용, 재귀 검색
@@ -143,14 +143,15 @@
 | 2026-02-27 | Ch.19 | ping, traceroute, ssh, scp, wget, curl, 포트포워딩 | 완료 |
 | 2026-02-28 | Ch.20 | locate, find(이름/타입/크기/시간), -exec, xargs | 완료 |
 | 2026-03-02 | Ch.21 | tar(czf/xzf/tzf), gzip(-k), zip(-r), rsync(-av/--delete/--dry-run) | 완료 |
+| 2026-03-03 | Ch.22 | 정규식 메타문자, BRE vs ERE, grep -E, ^의 이중 의미 | 완료 |
 
 ---
 
 ## 진행 현황
 
 - **총 챕터**: 41개
-- **완료**: 21개
-- **진행률**: 51%
+- **완료**: 22개
+- **진행률**: 54%
 
 ---
 
