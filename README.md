@@ -62,7 +62,7 @@
   - 핵심: tar, gzip, bzip2, zip, rsync
 - [x] **Ch.22: Regular Expressions**
   - 핵심: 기본 정규식, 메타문자, 문자 클래스
-- [ ] **Ch.23: grep 완전 정복** *(강의 추가)*
+- [x] **Ch.23: grep 완전 정복** *(강의 추가)*
   - 핵심: grep 옵션들, 정규식과 함께 사용, 재귀 검색
 - [ ] **Ch.24: Text Processing**
   - 핵심: cut, paste, join, comm, diff, sed, awk
@@ -134,14 +134,15 @@
 | 2026-02-28 | Ch.20 | locate, find(이름/타입/크기/시간), -exec, xargs | 완료 |
 | 2026-03-02 | Ch.21 | tar(czf/xzf/tzf), gzip(-k), zip(-r), rsync(-av/--delete/--dry-run) | 완료 |
 | 2026-03-03 | Ch.22 | 정규식 메타문자, BRE vs ERE, grep -E, ^의 이중 의미 | 완료 |
+| 2026-03-04 | Ch.23 | grep 옵션 4카테고리, -rn 세트, -o 추출, -F 고정문자열, 파이프+파일명 주의 | 완료 |
 
 ---
 
 ## 진행 현황
 
 - **총 챕터**: 42개
-- **완료**: 23개
-- **진행률**: 54.8%
+- **완료**: 24개
+- **진행률**: 57.1%
 
 ---
 

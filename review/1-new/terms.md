@@ -146,7 +146,7 @@
 ## Ch.21 Archiving and Backup
 
 - **묶기 vs 압축**: tar = 묶기(용량 안 줄어듦), gzip/bzip2/xz = 압축(용량 줄어듦). 리눅스는 두 단계 분리
-- **tar czf/xzf/tzf**: c=생성, x=풀기, t=목록. z=gzip, j=bzip2, J=xz. f=파일명 지정
+- ~~**tar czf/xzf/tzf**~~ ✅ 2026-03-04 practicing으로 승급
 - **tar -C**: Change directory. 풀 위치 지정. `tar xzf file.tar.gz -C /tmp/`
 - **gzip 원본 삭제**: `gzip file` 하면 원본 사라짐! `-k`(keep)로 원본 유지
 - **압축 3종 비교**: 속도 gzip>bzip2>xz, 압축률 xz>bzip2>gzip. 실무 90%는 gzip
@@ -166,9 +166,22 @@
 - **`[]` 문자 클래스**: 안의 문자 중 하나. `[0-9]` 숫자, `[a-z]` 소문자, `[A-Za-z]` 영문자
 - **`*` (0번 이상)**: 앞 문자 0번 이상 반복. `ab*c` → ac, abc, abbc. `.*` = 아무거나 다
 - **와일드카드 ≠ 정규식**: glob `*`=아무거나, 정규식 `*`=앞 문자 반복. 정규식의 "아무거나"는 `.*`
-- **BRE vs ERE**: BRE=`grep`(기본), ERE=`grep -E`. ERE가 `? + {} () |`를 이스케이프 없이 사용 가능
+- ~~**BRE vs ERE**~~ ✅ 2026-03-04 practicing으로 승급
 - **`+` (1번 이상)**: `ab+c` → abc, abbc ✅ / ac ❌. `*`와 달리 최소 1번 필요
 - **`?` (0 또는 1번)**: `colou?r` → color, colour ✅ / colouur ❌
 - **`{n,m}` (n~m번)**: `[0-9]{3}` = 숫자 3자리. `{3,}` = 3자리 이상
 - **`|` (OR)**: `cat|dog`. 공백 넣지 마! 공백도 패턴의 일부
 - **`()` (그룹화)**: `^(ERROR|WARNING)` = ERROR 또는 WARNING으로 시작
+
+## Ch.23 grep 완전 정복
+
+- **`-rn` 세트**: 재귀 검색 시 거의 항상 `-r`(재귀) + `-n`(줄 번호) 함께 사용
+- **`-w` 단어 매칭**: `grep -w 'is'`는 "is"만 잡고 "this", "island"는 안 잡힘. `\b`와 같은 효과
+- **`-o` 매치 부분만 추출**: `grep -oE '[0-9]+' file`로 숫자 덩어리만 뽑기. `-o` 없으면 줄 전체 출력
+- **`-v` 반전**: 매치 안 되는 줄 출력. `grep -vE '^#|^$'` = 주석과 빈 줄 제외
+- **`-F` 고정 문자열**: 정규식 끄기. `grep -F '192.168.1.1'`로 `.`을 문자 그대로 검색. 메타문자 이스케이프 불필요
+- **`-A/-B/-C` 컨텍스트**: After/Before/Context. `grep -C 3 'ERROR' log`로 에러 전후 3줄 표시
+- **`--include`/`--exclude-dir`**: `grep -rn --include='*.py' --exclude-dir='.git' 'TODO' .` 파일/디렉토리 필터링
+- **`-c` 카운트, `-l` 파일명만**: `-c`=매치 줄 수, `-l`=매치된 파일명 목록, `-L`=매치 안 된 파일명
+- **파이프 받을 때 파일명 금지**: `cmd | grep 'A' file` → 파이프 무시하고 file 읽음! 파일명 빼야 파이프 입력 사용
+- **egrep/fgrep deprecated**: `egrep` = `grep -E`, `fgrep` = `grep -F`. 새 스크립트에서는 옵션 방식 사용

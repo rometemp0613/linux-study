@@ -22,3 +22,11 @@
 ## Ch.19 Networking (2026-03-02) — 복습 퀴즈 승급
 
 - **wget vs curl**: 다운로드만 → wget(-c 이어받기 편함), API 테스트/디버깅 → curl(POST, 헤더 등)
+
+## Ch.21 Archiving and Backup (2026-03-04) — 복습 퀴즈 승급
+
+- **tar czf/xzf/tzf**: c=생성, x=풀기, t=목록. z=gzip, j=bzip2, J=xz. f=파일명 지정
+
+## Ch.22 Regular Expressions (2026-03-04) — 복습 퀴즈 승급
+
+- **BRE vs ERE**: BRE=`grep`(기본), ERE=`grep -E`. ERE가 `? + {} () |`를 이스케이프 없이 사용 가능
