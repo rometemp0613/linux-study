@@ -44,3 +44,7 @@
 ## Ch.19 복습 (2026-02-28 승급)
 
 - **scp 목적지 필수**: `scp user@server:/path/file` ← 이러면 에러! 반드시 목적지 명시: `scp user@server:/path/file ./`
+
+## Ch.18 복습 (2026-03-07 승급)
+
+- **/etc/fstab 6개 필드**: 장치(UUID) / 마운트위치 / 파일시스템 / 옵션(defaults) / dump(0=안함) / pass(0=검사안함, 1=루트, 2=나머지)
