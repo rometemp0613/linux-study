@@ -66,7 +66,7 @@
   - 핵심: grep 옵션들, 정규식과 함께 사용, 재귀 검색
 - [x] **Ch.24: Text Processing**
   - 핵심: cut, paste, join, comm, diff, sed, awk
-- [ ] **Ch.25: Formatting Output**
+- [x] **Ch.25: Formatting Output**
   - 핵심: nl, fold, fmt, pr, printf
 - [ ] **Ch.26: Printing**
   - 핵심: lpr, lp, a2ps, lpstat, lpq
@@ -136,14 +136,15 @@
 | 2026-03-03 | Ch.22 | 정규식 메타문자, BRE vs ERE, grep -E, ^의 이중 의미 | 완료 |
 | 2026-03-04 | Ch.23 | grep 옵션 4카테고리, -rn 세트, -o 추출, -F 고정문자열, 파이프+파일명 주의 | 완료 |
 | 2026-03-07 | Ch.24 | cut/paste/join, comm/diff, sed/awk, 도구 선택 가이드 | 완료 |
+| 2026-03-10 | Ch.25 | nl/fold/fmt/pr/printf, printf 형식지정자, 폭/정렬/0채움 | 완료 |
 
 ---
 
 ## 진행 현황
 
 - **총 챕터**: 42개
-- **완료**: 25개
-- **진행률**: 59.5%
+- **완료**: 26개
+- **진행률**: 61.9%
 
 ---
 
