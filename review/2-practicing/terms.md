@@ -7,7 +7,7 @@
 ## Ch.18 Storage Media (2026-02-26) — 퀴즈에서 틀린 것
 
 - ~~**파티션 이름**~~ ✅ 2026-03-10 mastered로 승급
-- **마운트 전 디렉토리 생성 필수**: 마운트 포인트가 없으면 `sudo mkdir /mnt/backup` 먼저! 없는 디렉토리에 mount하면 에러
+- ~~**마운트 전 디렉토리 생성 필수**~~ ✅ 2026-03-13 mastered로 승급
 - ~~**/etc/fstab 6개 필드**~~ ✅ 2026-03-07 mastered로 승급
 
 ## Ch.19 Networking (2026-02-27) — 퀴즈에서 틀린 것
@@ -29,4 +29,8 @@
 
 ## Ch.22 Regular Expressions (2026-03-04) — 복습 퀴즈 승급
 
-- **BRE vs ERE**: BRE=`grep`(기본), ERE=`grep -E`. ERE가 `? + {} () |`를 이스케이프 없이 사용 가능
+- ~~**BRE vs ERE**~~ ✅ 2026-03-13 mastered로 승급
+
+## Ch.24 Text Processing (2026-03-13) — 복습 퀴즈 승급
+
+- **diff -u**: unified 형식. `-`=삭제, `+`=추가, `@@`=위치 표시. git diff가 이 형식

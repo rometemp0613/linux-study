@@ -192,7 +192,7 @@
 - **paste**: 파일을 옆으로 합침. `-d` 구분자, `-s` 한 줄로 합침
 - **join**: 공통 필드로 두 파일 합침 (SQL JOIN). 두 파일 모두 정렬 필수
 - **comm**: 정렬된 두 파일 집합 비교. 3열(파일1만/파일2만/공통). `-12`=공통만, `-23`=파일1만, `-13`=파일2만
-- **diff -u**: unified 형식. `-`=삭제, `+`=추가, `@@`=위치 표시. git diff가 이 형식
+- ~~**diff -u**~~ ✅ 2026-03-13 practicing으로 승급
 - **diff -rq**: 디렉토리 비교에서 다른 파일 목록만 빠르게 확인
 - **sed 's/A/B/g'**: 찾아 바꾸기. `g` 없으면 줄당 첫 매치만, `g` 있으면 전부
 - **sed -i**: 파일 직접 수정. 되돌릴 수 없으니 먼저 화면에서 확인하는 습관!
@@ -214,3 +214,11 @@
 - **printf %s/%d/%f**: %s=문자열, %d=정수, %f=소수. %x=16진수, %o=8진수, %%=%문자
 - **printf 폭/정렬**: `%10s`=오른쪽 정렬, `%-10s`=왼쪽 정렬, `%05d`=0채움, `%.2f`=소수 2자리
 - **printf 인자 반복**: 형식보다 인자가 많으면 자동으로 형식을 반복 적용
+
+## Ch.26 Printing
+
+- **CUPS**: Common Unix Printing System. 리눅스/macOS 표준 프린팅 시스템. `http://localhost:631`로 웹 관리
+- **lpr vs lp**: 둘 다 파일 출력. lpr=BSD 계열, lp=System V 계열. CUPS가 둘 다 지원
+- **lpq/lpstat**: 인쇄 대기열 확인. lpq=BSD, lpstat=System V. `lpstat -p`=프린터 목록, `-d`=기본 프린터
+- **lprm/cancel**: 인쇄 작업 취소. lprm=BSD, cancel=System V
+- **a2ps**: Any to PostScript. 텍스트를 줄번호/헤더 붙여서 인쇄용으로 변환
