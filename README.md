@@ -70,7 +70,7 @@
   - 핵심: nl, fold, fmt, pr, printf
 - [x] **Ch.26: Printing**
   - 핵심: lpr, lp, a2ps, lpstat, lpq
-- [ ] **Ch.27: Compiling Programs**
+- [x] **Ch.27: Compiling Programs**
   - 핵심: gcc, make, Makefile 기초
 
 ### Part 4: Writing Shell Scripts
@@ -138,14 +138,15 @@
 | 2026-03-07 | Ch.24 | cut/paste/join, comm/diff, sed/awk, 도구 선택 가이드 | 완료 |
 | 2026-03-10 | Ch.25 | nl/fold/fmt/pr/printf, printf 형식지정자, 폭/정렬/0채움 | 완료 |
 | 2026-03-13 | Ch.26 | CUPS, lpr/lp, lpq/lpstat, lprm/cancel, a2ps | 간단히 완료 |
+| 2026-03-16 | Ch.27 | gcc, make, Makefile, ./configure, 소스 빌드 3단계 | 완료 |
 
 ---
 
 ## 진행 현황
 
 - **총 챕터**: 42개
-- **완료**: 27개
-- **진행률**: 64.3%
+- **완료**: 28개
+- **진행률**: 66.7%
 
 ---
 

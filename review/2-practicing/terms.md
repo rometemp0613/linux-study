@@ -33,4 +33,4 @@
 
 ## Ch.24 Text Processing (2026-03-13) — 복습 퀴즈 승급
 
-- **diff -u**: unified 형식. `-`=삭제, `+`=추가, `@@`=위치 표시. git diff가 이 형식
+- ~~**diff -u**~~ ✅ 2026-03-16 mastered로 승급
